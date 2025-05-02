@@ -7,4 +7,3 @@ console.log(deneme);
 
 const SERVER_PASSWORD= 01651484;
 console.log(SERVER_PASSWORD);
-SERVER_PASSWORD=123
