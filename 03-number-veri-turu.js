@@ -1,3 +1,10 @@
+// Bazen Sayilar string veri yapisinda tutulabilir. Bu verileri number verisine dönüsturme
+let stringNumber="11"
+console.log(stringNumber)
+
+let newNumber=Number(stringNumber)
+console.log(newNumber)
+
 // mod (kalan) alma
 console.log(3%2)
 
