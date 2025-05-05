@@ -1,3 +1,7 @@
+console.log(Boolean(0 == 0));
+typeof("merhaba")
+
+
 // Bazen Sayilar string veri yapisinda tutulabilir. Bu verileri number verisine dönüsturme
 let stringNumber="11"
 console.log(stringNumber)
