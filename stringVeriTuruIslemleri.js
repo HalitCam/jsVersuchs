@@ -19,5 +19,29 @@ console.log("Correct Writing: ", userName)
 // String icerisinde istedigimiz bilgiyi bulmak ve aratmak icin COK ÖNEMLI !!!
 
 console.log("location of @ : " , email.search("@"))
-let Domain = email.slice(email.indexOf("@")+1, email.search("."))
-console.log(Domain)
+let domain = email.slice(email.search("@")+1, email.indexOf("."))
+console.log ("Domain Bilgisi:" , domain)
+
+// String veri icindeki veriyi degistirme
+
+console.log(email)
+email= email.replace("gmail", "alev")
+console.log(email)
+
+// Istedigim verinin olup olmadigi true/false .includes()
+
+let decide= email.includes("@")
+console.log(decide)
+
+// Istedigim sey ile bitti mi? Basladi mi? endsWith() , startsWith
+
+console.log("halit ile e mail adresim basliyor mu? " , email.startsWith("halit"))
+console.log("e mail adresim alev.com ile bitiyor mu?" , email.endsWith("alev.com"))
+console.log(email)
+
+// userName in bas harfini sadece büyük yapma
+userName = userName.toUpperCase()
+console.log(userName)
+
+let fullName = ` ${ userName[0].toUpperCase()+ userName.slice(1).toLowerCase} ${ lastName.toUpperCase()} `
+console.log(fullName)
