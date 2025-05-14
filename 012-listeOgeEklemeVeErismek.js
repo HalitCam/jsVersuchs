@@ -2,3 +2,11 @@
 
 let item = document.querySelector("ul#list>li:last-child ")
 console.log(item)
+console.log(item.innerHTML)
+
+// *** Listeye Öge eklem/cikarma ****
+
+let ulDOM = document.querySelector("ul#list")
+let liDOM = document.createElement ("li")
+
+liDOM:innerHTML = "Kendi Olusturdugumuz Oge"
