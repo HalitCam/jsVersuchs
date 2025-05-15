@@ -9,4 +9,8 @@ console.log(item.innerHTML)
 let ulDOM = document.querySelector("ul#list")
 let liDOM = document.createElement ("li")
 
-liDOM:innerHTML = "Kendi Olusturdugumuz Oge"
+liDOM.innerHTML = "Kendi Olusturdugumuz Oge"
+
+ulDOM.append(liDOM)  // En sona eklemek
+
+ulDOM.prepend (liDOM) // En basa eklemek
