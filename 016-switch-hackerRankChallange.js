@@ -1,10 +1,10 @@
 // let input = prompt ("Please enter a word ")
 
-function getLetter  (s) {
+function getLetter(s) {
     // charAt() method has same property with []
     switch (s.charAt(0).toLowerCase()) {
         case "a" || "e" || "i" || "o" || "u":
-        return "A";
+            return "A";
 
         case "a" || "c" || "d" || "f" || "g":
             return "B";
@@ -14,7 +14,7 @@ function getLetter  (s) {
             break;
         case "n" || "p" || "q" || "r" || "s" || "t" || "v" || "w" || "x" || "y" || "z":
             return "D";
-        
+
 
     }
     return "not found";
