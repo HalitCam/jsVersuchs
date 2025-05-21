@@ -1,12 +1,12 @@
 let info1 = document.querySelector("h1#info1")
 info1.classList.add("blue")
 
+let s = Number();
 let note = Number((prompt("Please a lesoon note for evaluation 0-100")))
 
 
-
-function inputEvelaute(s) {
-    switch (s) {
+let check= function inputEvelaute(s) {
+    switch (true) {
         case (s >= 90 && s <= 100):
             return "AA"
 
@@ -33,12 +33,13 @@ function inputEvelaute(s) {
 
         case s >= 0 && s <= 49:
             return "AA"
-        default : "BASARISIZ"
-        break
+
+        default : return "please enter correct interval number !!"
+        
 
     
     }
 
 }
 
-console.log(inputEvelaute(note))
+console.log((check(note)))
