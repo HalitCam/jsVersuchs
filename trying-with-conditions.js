@@ -1,6 +1,6 @@
 let info1 = document.querySelector("h1#info1")
 info1.classList.add("blue")
-;
+
 let note = Number((prompt("Please a lesoon note for evaluation 0-100")))
 
 const SMILE = `<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-emoji-smile" viewBox="0 0 16 16">
