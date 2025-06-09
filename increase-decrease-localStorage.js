@@ -24,4 +24,11 @@ function clickFunction(){
 
 //localStorage alaninda kaydedilen bütün verileri localStorage.clear() ile sileriz !!
 // the Js coding is endet
-// neue js constructed
+
+function clickFunction(){
+    this.id == "increase" ? counter ++ : counter --
+    monitorDOM.innerHTML = counter
+    localStorage.setItem("counterInfo", counter)
+    counter = localStorage.getItem("counterInfo")
+    
+ }
