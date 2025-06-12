@@ -23,12 +23,5 @@ function clickFunction(){
 //bir veri olarak tutup sonrasinda JSON.parse() islemi ile tekrardan istedigimiz halde veri olarak alabiliriz!!
 
 //localStorage alaninda kaydedilen bütün verileri localStorage.clear() ile sileriz !!
-// the Js coding is endet
 
 
-function clickFunction(){
-    this.id == "increase" ? counter ++ : counter --
-    monitorDOM.innerHTML = counter
-    localStorage.setItem("counterInfo", counter)
-    counter = localStorage.getItem("counterInfo")
-    
