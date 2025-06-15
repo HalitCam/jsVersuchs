@@ -24,4 +24,4 @@ function clickFunction(){
 
 //localStorage alaninda kaydedilen bütün verileri localStorage.clear() ile sileriz !!
 
-
+ 
