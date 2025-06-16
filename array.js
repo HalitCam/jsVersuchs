@@ -31,3 +31,27 @@ let deleteData = items.splice(0,3,"First3DatasDeleted") // Burada 0. index ten b
 // 3. parametre eklendi !!
 console.log("deleted : ", deleteData, "itemsRemain : ", items )
 
+console.log(items)
+// let coppyItems = items.slice() // slice() methodu ile coppyItems = [...items] ayni islemi yapar !!!
+
+coppyItems = items.slice(0,2)
+console.log(coppyItems)
+console.log("items : ", items, "coppyItems : ", coppyItems)
+
+let data2 = [1, 2,3,4]
+let names = ["ali", "veli", "mehmet"]
+let newData = [...names, ...data2] //es6 ile Array yapisini birlestirmek
+console.log(newData)
+
+
+function getSecondLargest(nums) {
+    nums.sort()
+    x=nums.length-1
+    while(nums[x]!=nums[x-1]){
+        return nums[x-1]
+    } else x--
+    
+    }
+let dizi = [2,3,6,6,5]
+
+console.log(getSecondLargest(dizi))
