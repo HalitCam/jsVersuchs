@@ -55,3 +55,15 @@ function getSecondLargest(nums) {
 let dizi = [10,9,9,8,8,11,8,0,9,1]
 console.log(dizi.sort())
 console.log(getSecondLargest(dizi))
+
+function orderNumbers(dizi){
+    let count = []
+    let temp = []
+    for(let index= dizi.length-1 ; index >= 0 ;  index--){
+        if (dizi[index]>dizi[index-1]) temp=dizi[index]
+            else temp = dizi[index-1]
+    }
+    count.unshift(temp)
+    dizi.remove(temp)
+    orderNumbers(dizi)
+}
