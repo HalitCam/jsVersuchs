@@ -53,8 +53,12 @@ function getSecondLargest(nums) {
     }
 }
 let dizi = [10,9,9,8,8,11,8,0,9,1]
-console.log(dizi.sort())
-console.log(getSecondLargest(dizi))
+dizi.sort()
+console.log(dizi)
+
+
+/* console.log(getSecondLargest(dizi))
+orderNumbers(dizi)
 
 function orderNumbers(dizi){
     let count = []
@@ -64,6 +68,5 @@ function orderNumbers(dizi){
             else temp = dizi[index-1]
     }
     count.unshift(temp)
-    dizi.remove(temp)
-    orderNumbers(dizi)
-}
+    console.log(count)
+} */
