@@ -57,16 +57,18 @@ dizi.sort()
 console.log(dizi)
 
 
-/* console.log(getSecondLargest(dizi))
-orderNumbers(dizi)
-
-function orderNumbers(dizi){
-    let count = []
-    let temp = []
-    for(let index= dizi.length-1 ; index >= 0 ;  index--){
-        if (dizi[index]>dizi[index-1]) temp=dizi[index]
-            else temp = dizi[index-1]
+function getSecondLargest(nums) {
+    let minSorting =[];
+    for(let index = 0 ; index<nums.length; index++) {
+        let index2 = index+1;
+        for(;index2<nums.length; index2++){
+            if(nums[index2]<=nums[index]) {
+                let temp = nums[index]
+                nums[index] = nums[index2]
+                nums[index2] = nums[index]             
+            }
+        }
+        
     }
-    count.unshift(temp)
-    console.log(count)
-} */
+    console.log(nums)
+}
