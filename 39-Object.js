@@ -59,7 +59,7 @@ newItem2 = [...items] // can be copied to an array using the destruction method
 console.log("newItem2 :" , newItem2)
 console.log("items : ",items)
 
-//items ve items2 dizilerini es6 ile(...) cok basit birlestirebilirim !!
+//items ve items2 dizilerini es6 ile(...) cok basit birlestirebilirim !! // es6 EcmaScript6 Js version dili
 mixItems = [...items, ...items2]
 console.log("mixItems: ",mixItems)
 
