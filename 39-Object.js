@@ -46,3 +46,26 @@ let stringObject = JSON.stringify(person);
 let newPerson = JSON.parse(stringObject); 
 // parse methodu da stringtify methodunun tersi olarak çalışır ve stringi objeye çevirir
 */
+
+// Array kopyalamak --> slice(), [.. ES6] - ORJINAL DIZI DEGISMEZ !!
+let items = ["merhaba", 1 , 2 , 3]
+let items2 = ["ali", "burcu"]
+
+newItem1 = items.slice(0,2)
+console.log("newItem1 : ", newItem1)
+console.log("items : ",items)
+
+newItem2 = [...items] // can be copied to an array using the destruction method
+console.log("newItem2 :" , newItem2)
+console.log("items : ",items)
+
+//items ve items2 dizilerini es6 ile(...) cok basit birlestirebilirim !!
+mixItems = [...items, ...items2]
+console.log("mixItems: ",mixItems)
+
+// Array icerisindeki bilgiyi tek bir deger olarak Stringe cevirmek --> toString, join
+newData = items.toString()
+console.log("newData: " , newData, "length: ", newData.length)
+newData2 = items.join(" ")
+console.log(newData2)
+// Math.floor() methodu ile sayiyi asagi yuvarlarim !!
