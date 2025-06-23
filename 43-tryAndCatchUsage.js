@@ -8,7 +8,7 @@ try {
     });
 } catch (error) {
     console.log("hata: ", error)
-    items = [1,2,3,4,5,6]
+    items = [1,2,3,4,5,6] //hata göstermenin yaninda hata olursa istedigim bir islemi yaptirabilirim !
     items.forEach(item => console.log(item))
 }
 
@@ -20,3 +20,4 @@ console.log(info)
 
 // try-catch yapisi ile bilmedigimiz disardan alacagimiz bilgiler var ise bunlari bu yapinin
 //icerisine koyarak hata yönetimi yapariz !! 
+// the end of thiese topic
