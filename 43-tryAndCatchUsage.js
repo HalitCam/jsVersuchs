@@ -32,3 +32,14 @@ try {
 }
 
 */
+
+function valid(){
+    try {
+        if (document.querySelector("#dogumTarihi").value == "") {
+            throw 'Doğum tarihini boş geçemezsiniz'; // throw ile catch icerisine hata durumunda err degeri ne deger atmais oluyoruz !!
+        };
+    }catch(err) {
+        alert(err);
+    }
+}
+
