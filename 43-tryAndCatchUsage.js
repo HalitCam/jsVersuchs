@@ -21,3 +21,14 @@ console.log(info)
 // try-catch yapisi ile bilmedigimiz disardan alacagimiz bilgiler var ise bunlari bu yapinin
 //icerisine koyarak hata yönetimi yapariz !! 
 // the end of thiese topic
+
+/*
+try {
+  //Çalıştırılacak kodlar
+}catch(hata) {
+  //Hata yakalandığında çalışacak kodlar
+}finally {
+  //try tamamlandıktan sonra hata olsada olmasada çalışacak olan kodlar.
+}
+
+*/
