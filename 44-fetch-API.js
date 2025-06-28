@@ -24,7 +24,13 @@ fetch("https://jsonplaceholder.typicode.com/posts").then(response => {
     });
     })
 
-fetch("https://www.haberler.com/").then(response =>{ 
-return response.json()}).then(responseJson => {
-    console.log(responseJson)
-})
+// fetch("https://www.haberler.com/").then(response =>{ 
+// return response.json()}).then(responseJson => {
+//     console.log(responseJson)
+// })
+
+/* 
+Eğer bir HTTP isteği yaptıysan → response.json() kullanırsın.
+
+Elinde bir JSON string varsa → JSON.parse() kullanırsın.
+*/
